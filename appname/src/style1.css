@@ -1,0 +1,24 @@
+.card:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+
+}
+.class-img {
+    position: relative;
+    top: -40px;
+    left: 0px
+}
+h1 {
+    text-align: center;
+    color: greenyellow;
+}
+
+/* services. */
+
+p{
+    text-shadow: 3px green;
+}
+.navbar{
+    background-color: brown;
+    padding: 5px;
+}

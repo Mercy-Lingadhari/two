@@ -1,0 +1,26 @@
+import ReactDOM from 'react-dom/client'
+
+let prn=prompt("enter your amount")
+let roi=prompt("enter your interest")
+var total=(prn*roi/100)
+ const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+<>
+<table border="3px">
+<tr>
+  <td> principle amount</td>
+
+  <td>rate of intrest</td>
+  
+  <td>intrest amount</td>
+</tr>
+<tr>
+  <td>{prn}</td>
+  <td>{roi}</td>
+  <td>{total}</td>
+</tr>
+</table>
+</>
+    
+  
+);

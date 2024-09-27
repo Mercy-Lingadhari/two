@@ -1,0 +1,50 @@
+import {createContext} from "react"
+import CompA from "./CompA"
+export const context=createContext()
+function App(){
+  let uid="mouritech"
+  return(
+    <>
+   <context.Provider value={uid}>
+   <CompA/>
+   </context.Provider>
+   
+  
+    </>
+  )
+}
+export default App
+==========================================
+import React from 'react'
+import CompB from './CompB'
+export default function CompA(){
+    return(
+        <>
+        <CompB />
+        </>
+    )
+}
+==========================================comp--A
+import React from 'react'
+import CompC from './CompC'
+export default function CompB(){
+  return (
+    <>
+    <CompC/>
+    </>
+  )
+}
+============================================comp--B
+import React, { useContext } from 'react'
+ import{context} from './App'
+
+export default function CompC() {
+    let x=useContext(context)
+  return (
+   <>
+   <h2>CompC</h2>
+   <h3>hello {x}</h3>
+   </>
+  )
+}
+=========================================comp--C

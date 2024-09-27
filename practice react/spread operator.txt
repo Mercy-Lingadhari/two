@@ -1,0 +1,30 @@
+import Data from './Data.json'
+import { useState } from "react"
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+const App = () => {
+const students={
+  f_name:"Bobby",
+  l_name:"mercy",
+  place:"hyd"
+}
+const[state,setState]=useState(students);
+const demo=()=>{
+  setState({f_name:"bobby", place:"kdp"})
+  //setState({...state, f_name:'Ishu'})
+}
+  return (
+    <>
+     <h2>hello {state.f_name}  place is {state.place}</h2>
+       <button onClick={demo}>update</button>         
+     
+
+
+              </>
+            )
+
+          
+     
+  
+  
+}
+export default App

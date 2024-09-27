@@ -1,0 +1,10 @@
+import ReactDOM from 'react-dom/client'
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+ const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <>
+ <h2>Data values-importing & exporting</h2>
+ <h1 className='text-danger fst-italic'>Bootstrap</h1>
+ <h2 className='bg-warning text-light p-2 fst-italic'>Css</h2>
+</>
+);

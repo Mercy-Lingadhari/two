@@ -1,0 +1,13 @@
+import React from 'react'
+
+import { useState } from 'react';
+
+export default function App(){
+  fetch("https://api.openweathermap.org/data/2.5/weather?q=kadapa&appid=f42145bf6f149b6728947a9da2af18f2")
+  .then(res=>res.json())
+  .then(json=>console.log(json.main.temp))
+  return(
+    <>
+    </>
+  )
+}

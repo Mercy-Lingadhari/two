@@ -1,0 +1,24 @@
+import { type } from "@testing-library/user-event/dist/type"
+import { useState } from "react"
+const App = () => {
+    const person={
+fname:'Bobby',
+lname:'janu',
+place:'hyd',
+age:'22',
+subscription:{
+    payment:'monthly',
+    type:'premium'
+}
+    }
+const [state, setState]=useState(person)
+    return (
+        <>
+            <h1>janu</h1>
+            <h2>{person.fname}</h2>
+            <h2>{person.subscription.payment}</h2>
+            <input type="text" value={person.age}/>
+        </>
+    )
+}
+export default App

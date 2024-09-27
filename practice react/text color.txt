@@ -1,0 +1,31 @@
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import {useState} from 'react';
+ import './style1.css'
+const App = () => {
+  const students = {
+    f_name: 'Mercy',
+    l_name: 'Ishi',
+    place: 'kadapa',
+    color: 'black'
+  }
+ 
+  const [state, setState] = useState(students);
+ 
+  const demo = () => {
+    setState({
+      f_name: "mercy",
+      l_name: 'Ishu',
+      place: 'Hyd',
+      color: 'green' 
+    });
+  }
+ 
+  return (
+<>
+<h2 style={{color: state.color}}>Hello  {state.l_name}, place is {state.place} </h2>
+<button className="btn btn-warning" onClick={demo}>Update</button>
+</>
+  )
+}
+ 
+export default App;

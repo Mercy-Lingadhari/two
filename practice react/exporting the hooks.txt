@@ -1,0 +1,30 @@
+app.js===============================
+import { useState } from "react"
+import demo, { users } from './demo'
+const App = () => {
+    const [state, setState]=useState(demo)
+    const [user, setUser]=useState(users)
+    return (
+        <>
+            <h1>janu</h1>
+            <h2>{state}</h2>
+            <h2>{user[0].name}</h2>
+            <h2>{user[1].name}</h2>
+        </>
+    )
+}
+export default App
+demo.js===================================
+const person='sudhakar reddy sir'
+const users=[
+    {
+        name:'bobby',
+        age:'23'
+    },
+    {
+        name:'mercy',
+        age:'22'
+    }
+]
+export default person
+export {users}

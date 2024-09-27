@@ -1,0 +1,13 @@
+import { useState } from "react"
+const App = () => {
+    const students=['Bobby','princy','mercy','ishu']
+    const [state, setState] = useState(students)
+    return (
+        <>
+            <h1>janu</h1>
+            <h2>{state[0]}</h2>
+            <input type="text" value={state[3]}></input>
+        </>
+    )
+}
+export default App

@@ -1,0 +1,12 @@
+import ReactDOM from 'react-dom/client'
+var course="single page application-SPA"
+var num1=40
+var num2=50
+ const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <>
+  <h2>welcome to {course}world</h2>
+  <h3>number1 is {num1} and number2 is {num2}</h3>
+  <h4>total of {num1} and {num2} is {num1+num2}</h4>
+  </>
+);

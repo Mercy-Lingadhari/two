@@ -1,0 +1,32 @@
+import Data from './Data.json'
+import { useState } from "react"
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+
+const App = () => {
+  const [state, setState] = useState(Data)
+  return (
+    <>
+      <div className="container">
+        <div className="row">
+          {state.map((list) => {
+            return (
+              <>
+                <div className="col-md-4">
+                  <div class="card">
+
+                    <img src={list.pic} class="card-img-top" alt="" />
+                    <div class="card-body">
+                      <h5 class="card-title">{list.place}</h5>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )
+
+          })}
+        </div>
+      </div>
+    </>
+  )
+}
+export default App

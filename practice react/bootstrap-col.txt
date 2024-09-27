@@ -1,0 +1,55 @@
+import ReactDOM from 'react-dom/client'
+import "../node_modules/bootstrap/dist/css/bootstrap.css"
+import pic from'./bg.jpg'
+import pic1 from'./bg.jpg'
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <>
+   
+    <div className="container">
+      <div className="row">
+      {/* <div className='col-md-6 col-md-3 col-md-3  bg-warning'> */}
+      <div className="col-6   bg-success"><p> Whenever you need to, be sure to use margin utilities to keep things
+      nice and tidy.
+      Whenever you need to, be sure to use margin utilities to keep things
+        nice and tidy.</p></div>
+      <div className="col-6  bg-warning">
+        <h1 className="text-primary">List of course</h1>
+       <ul><li>css</li>
+       <li>javascript</li>
+       <li>html</li>
+       </ul>
+       </div>
+        </div>
+ 
+        <div className="row">
+        <div className=" col-md-12 p-3 bg-danger ">
+          <p className="text-dark"> Whenever you need to, be sure to use margin utilities to keep things
+        nice and tidy.Whenever you need to, be sure to use margin utilities to keep things
+        nice and tidy.Whenever you need to, be sure to use margin utilities to keep things
+        nice and tidy  nice and tidy.Whenever you need to, be sure to use margin utilities to keep things
+        nice and tidy</p></div>
+        </div>
+        <div className="row">
+          <div className="col-md-4">
+            <img src={pic} className="img-fluid mx-auto d-block"alt=" " width={400}/>
+          </div>
+ 
+          <div className="col-md-4 p-3 text-light bg-info">
+          <p>Whenever you need to, be sure to use margin utilities to keep things
+          nice and tidy.Whenever you need to, be sure to use margin utilities to keep things
+          nice and tidy and tidy.Whenever you need to, be sure to use margin utilities to keep things
+          nice and tidy.</p>
+          </div>
+     
+      <div className="col-md-4">
+      <img src={pic1}  className="img-fluid mx-auto d-block "alt=" "   width={400}/>
+          </div>
+      </div>
+       </div>
+      </>
+      );
+     
+       
+     
+ 

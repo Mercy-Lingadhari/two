@@ -1,0 +1,20 @@
+import ReactDOM from 'react-dom/client'
+const students=['mercy','nandu','mammu','ishu','ishi']
+ const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+<>
+{students}
+<br/>
+<ul>
+  <li style={{color: "green"}}>{students[0]}</li>
+  <li style={{color: "green"}}>{students[1]}</li> 
+   <li style={{color: "green"}}>{students[2]}</li>
+   <li style={{color: "green"}}>{students[3]}</li>
+   <li>{students[4]}</li>
+</ul>
+{/* <h1 style={{color: "green"}}>mouritech</h1> */}
+
+</>
+    
+  
+);

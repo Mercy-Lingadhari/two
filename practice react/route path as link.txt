@@ -1,0 +1,55 @@
+import {BrowserRouter,Routes ,Route } from 'react-router-dom'
+import Courses from './Courses'
+import About from './About'
+function App(){
+ 
+  return(
+    <>
+<h1>React Router Dom</h1>
+  <BrowserRouter>
+ {/* <a href='/'>home</a> */}
+  {/* <a href='/About'>About</a> */}
+  {/* <a href='/Courses'>courses</a> */}
+  <Link to="/">home</Link>
+  <Link to="/about">About</Link>
+  <Link to="/courses">Courses</Link>
+  <Routes>
+    <Route path='/' element={<h1>main root</h1>}/>
+    
+    <Route path='/about' element={<About/>}/>
+    
+    <Route path='/courses' element={<Courses/>}/>
+  </Routes>
+  </BrowserRouter>
+    </>
+  )
+}
+export default App
+
+
+abou.js==============================
+import React from 'react'
+
+export default function About() {
+  return (
+    <div>
+      <p>A single page application is a single page (hence the name) where a lot of information stays the same and only a few pieces need to be updated at a time.
+For example, when you browse through your email, you notice that not much changes during navigation — the sidebar and header remain untouched as you go through your inbox.
+The SPA only sends what you need with each click, and your browser renders that information. This is different than a traditional page load where the server rerenders a full page with every click you make and sends it to your browser</p>
+    </div>
+  )
+}
+================================courses.js
+import React from 'react'
+
+export default function Courses() {
+  return (
+    <div>
+      <ul>
+        <li>java</li>
+        <li>python</li>
+        <li>react</li>
+      </ul>
+    </div>
+  )
+}

@@ -1,0 +1,38 @@
+const person = {
+    name: "Janu",
+    place: "Hyd",
+    age: 23
+}
+const students = ['ishu', 'ishi', 'yakshi', 'dimple']
+const emp = [
+    {
+        id: 1,
+        fname: 'ishu',
+        email: 'ishu@gmail.com'
+    },
+    {
+        id: 2,
+        fname: 'ishi',
+        email: 'ishi@gmail.com'
+    },
+    {
+        id:3,
+        fname:'mercy',
+        email:'mercy@gmail.com'
+    }
+]
+export default person
+export {students,emp }
+
+============================
+import ReactDOM from 'react-dom/client'
+import person,{ students,emp }  from './data'
+ const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <>
+ <h2>Data values-importing & exporting</h2>
+ <h1>{person.name}</h1>
+ <h2>{students[2]}</h2>
+ <h2>{emp[0].fname}</h2>
+</>
+);

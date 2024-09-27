@@ -1,0 +1,17 @@
+import ReactDOM from 'react-dom/client'
+import pic from './download.png'
+import pic1 from './download (1).png'
+let uid=prompt("enter user id")
+let password=prompt("enter password")
+let result;
+if(uid==="mercy"&& password==="princy123"){
+  result=pic
+}else{
+  result=pic1
+}
+ const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <>
+ <img src={result} alt=''/>
+</>
+);

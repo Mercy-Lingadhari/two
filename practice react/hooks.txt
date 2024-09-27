@@ -1,0 +1,14 @@
+import { useState } from "react"
+const App = () => {
+ const [state, setState]=useState("mercy")
+  const [age, setAge]=useState(23)
+
+    return (
+      <>
+      <h1>janu</h1>
+      <h2>{state}</h2>
+      <h2>{age}</h2>
+      </>
+    )
+}
+export default App

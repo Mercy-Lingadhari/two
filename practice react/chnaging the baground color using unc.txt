@@ -1,0 +1,16 @@
+import React, { useState, useEffect } from "react";
+
+export default function App() {
+  const [color, setColor] = useState("React");
+
+  const handler = (e) => {
+    setColor(e.target.value);
+  };
+
+  return (
+    <>
+      <h2 style={{ background: color }}>{color}</h2>
+      <input type="text" value={color} onChange={handler} />
+    </>
+  );
+}

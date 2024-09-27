@@ -1,0 +1,38 @@
+import React, { useMemo, useState } from 'react';
+
+const Counter = () => {
+  const [add, setAdd] = useState(0);
+  const [minus, setMinus] = useState(100);
+
+  const addition = () => {
+    setAdd(add + 1);
+  };
+
+  const deletion = () => {
+    setMinus(minus - 1);
+  };
+  const multiplication=useMemo(function multiply(){
+    console.log("hello")
+    return add*10
+  },[add]
+)
+
+  // const multiply = () => {
+    // console.log('react');
+    // return add * 5;
+  // };
+
+  return (
+    <div>
+      <h3>{add}</h3>
+      {/* <h3>{multiply()}</h3>
+       */}
+       <h3>{multiplication}</h3>
+      <button onClick={addition}>Add</button>
+      <h3>{minus}</h3>
+      <button onClick={deletion}>Minus</button>
+    </div>
+  );
+};
+
+export default Counter;

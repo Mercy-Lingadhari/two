@@ -1,0 +1,30 @@
+index.js=====================
+import ReactDOM from "react-dom/client"
+import App from'./App'
+const root=ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+<>
+<App/>
+</>
+);
+app.js===========================
+import Comp from './Comp'
+const App=()=>{
+    var  uid="mercy"
+return(
+    <>
+<Comp x={uid}/>
+    </>
+)
+}
+export default App
+comp.js===========================
+import React from "react"
+
+export default function Comp(props) {
+  return (
+    <div>
+      <h1>Hello{props.x}</h1>
+    </div>
+  )
+}

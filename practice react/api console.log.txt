@@ -1,0 +1,14 @@
+import React from 'react'
+import { useState } from "react"
+
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import { useEffect } from 'react'
+export default function App(){
+useEffect(()=>console.log("hello"))
+   
+    
+   return <>
+
+</>
+    
+}

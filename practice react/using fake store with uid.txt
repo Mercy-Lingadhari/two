@@ -1,0 +1,33 @@
+import React from 'react'
+import { useState } from "react"
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+export default function App(){
+    const[state,setState]=useState([])
+    fetch('https://fakestoreapi.com/carts')
+      .then(response => response.json())
+      //.then(json => console.log(json))
+      .then(json=>setState(json))
+   
+    return (
+        <>
+        <div className='container mt-3'>
+     <div className='row g-4'>
+     {state.map((list)=>{
+      return(
+    <>
+<div className='col-md-4'>
+<div className='card'>
+<div className='card-body'>
+<h5 className='card-title text-center'>userid{list.id}</h5>
+<p className='card-Description text-center'>date{list.date}</p>
+</div>
+</div>
+</div>
+</>
+      )
+    })}
+</div>
+</div>
+</>
+    )
+}

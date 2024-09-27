@@ -1,0 +1,23 @@
+import React, { useState } from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import './style1.css';
+
+export default function App() {
+  const emp = {
+    fname: 'mercy',
+    lname:"janu"
+  };
+
+  const [style, setStyle] = useState(emp);
+
+  const update = () => {
+    style.fname === 'mercy' ? setStyle({ fname: 'bobby' }) : setStyle({ lname: 'ishu' });
+  };
+  const color = style.fname === 'mercy' ? 'blue' : 'green';
+  return (
+    <>
+      <h2 style={{ color: color }}>hello {style.fname}</h2>
+      <button onClick={update}>Update style</button>
+    </>
+  );
+}

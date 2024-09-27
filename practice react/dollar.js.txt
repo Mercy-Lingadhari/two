@@ -1,0 +1,28 @@
+import ReactDOM from 'react-dom/client'
+
+let dollar=prompt("enter your amount")
+let rupees=45.76
+
+var result=dollar*45.76
+ const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+<>
+{/* <h1 style={{color: "green"}}>mouritech</h1> */}
+<table border="3px">
+<tr>
+  <td> dollar</td>
+
+  <td>rupees</td>
+  
+  <td>result</td>
+</tr>
+<tr>
+  <td>{dollar}</td>
+  <td>{rupees}</td>
+  <td>{result}</td>
+</tr>
+</table>
+</>
+    
+  
+);

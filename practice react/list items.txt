@@ -1,0 +1,19 @@
+import React, { useState } from 'react';
+
+const App = () => {
+  const arr = ['a', 'b', 'c', 'd', 'e']
+
+
+  return (
+    <>
+      <h1>react map</h1>
+      <ul>
+        {arr.map((x) => {
+          return <li>{x}</li>
+        })}
+      </ul>
+    </>
+  );
+};
+
+export default App;

@@ -1,0 +1,25 @@
+import { useState } from "react";
+const App=()=>{
+    const[state,setState]=useState('Mercy')
+    const handler=()=>{
+        if(state==='React App'){
+        setState("javascript")
+        }else{
+            setState("React App")
+        }
+    }
+    return(
+        <>
+        <h2>{state}</h2>
+        <button onClick={handler}>update state</button>
+        </>
+    )
+ 
+}
+export default App
+ 
+ 
+ 
+ 
+ 
+ 

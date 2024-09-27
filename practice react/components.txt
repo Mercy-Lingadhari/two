@@ -1,0 +1,75 @@
+function Demo1(){
+    return(
+     <>
+     <h1>Mouritech</h1>
+     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It hasLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</p>
+     </>
+    )
+     
+ }
+ export default Demo1
+=============================
+function Demo2(){
+    return(
+     <>
+    <h2 style={{backgroundColor:"plum"}}>Login</h2>
+    <form>
+        <input type="text" placeholder="user id"></input><br/>
+        <input type="text" placeholder="password"></input><br/>
+        <input type="text" placeholder="submit"></input><br/>
+    </form>
+     </>
+    )
+     
+ }
+ export default Demo2
+=================================
+function Demo3(){
+    return(
+        <>
+        <h1 className="two">Copyright@12</h1>
+        </>
+    )
+}
+export default Demo3
+=================================
+import ReactDOM from "react-dom/client"
+import Demo1 from './demo1'
+import Demo2 from './demo2'
+import Demo3 from './demo3'
+import './style1.css'
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+   <>
+      <Demo1 />
+      <Demo2 />
+      <Demo3/>
+   </>
+);
+
+==================
+p{
+    color: red;
+}
+.one{
+    color: rebeccapurple;
+}
+.two{
+    background-color: #333;
+    height: 300px;
+}
+h1{
+    color: yellow;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+
+
+
+
+
+
+

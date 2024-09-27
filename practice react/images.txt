@@ -1,0 +1,12 @@
+import ReactDOM from 'react-dom/client'
+import pic from './images (5).jpg'
+const pic1="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHCyfogwVsgQpPvWIXeEXDgya5JEvOmnVqaQ&s"
+ const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <>
+  <h2 style={{color:"red"}}>Images</h2>
+<img style={{borderRadius:"20%"}} src={pic} alt="" width={400}/>
+<br/>
+ <img style={{borderRadius:"20%"}}   src={pic1} alt="" width={400}/> 
+</>
+);

@@ -1,0 +1,49 @@
+first create the=== app.js
+import Bottom from "./Bottom"
+import Middle from "./Middle"
+import Top from"./Top"
+import './style1.css'
+const App=()=>{
+return(
+  
+    <>
+<Top/>
+<Bottom/>
+<Middle/>
+    </>
+)
+}
+export default App
+tpo.js=====
+const Top=()=>{
+    return(
+        <>
+  <h2>Mouritech</h2>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It hasLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</p>
+        </>
+    )
+    }
+    export default Top
+bottom.js========
+const  Bottom=()=>{
+    return(
+        <>
+   <h1 className="two">Copyright@12</h1>
+        </>
+    )
+    }
+    export default Bottom
+middle.js======
+const Middle=()=>{
+    return(
+        <>
+   <h2 style={{backgroundColor:"plum"}}>Login</h2>
+    <form>
+        <input type="text" placeholder="user id"></input><br/>
+        <input type="text" placeholder="password"></input><br/>
+        <input type="text" placeholder="submit"></input><br/>
+    </form>
+        </>
+    )
+    }
+    export default Middle

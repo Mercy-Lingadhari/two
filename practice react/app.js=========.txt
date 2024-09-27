@@ -1,0 +1,38 @@
+app.js========================
+import Data from './data.json'
+import { useState } from "react"
+const App = () => {
+  const [state, setState] = useState(Data)
+  return (
+    <>
+      <h1>React Map</h1>
+      {state.map((list) => {
+        return <li>{list.name}</li>
+      })}
+    </>
+  )
+}
+export default App
+data.js==============================
+[
+    {
+        "name":"mercy",
+        "place":"hyd",
+        "email":"mercy@123"
+    },
+    {
+        "name":"princy",
+        "place":"hyd",
+        "email":"princyy@123"
+    },
+    {
+        "name":"ishu",
+        "place":"hyd",
+        "email":"ishu@123"
+    },
+    {
+        "name":"ishi",
+        "place":"hyd",
+        "email":"ishi@123"
+    }
+]

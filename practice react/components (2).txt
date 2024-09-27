@@ -1,0 +1,42 @@
+app.js===========================
+import React from 'react'
+
+export default function CompC({data}) {
+  return (
+   <>
+   <h2>hello react</h2>
+   <h3>hello {data}</h3>
+   </>
+  )
+}
+=========================compA
+import React from 'react'
+import CompB from './CompB'
+export default function CompA({data}){
+    return(
+        <>
+        <CompB data={data}/>
+        </>
+    )
+}
+========================compB
+import React from 'react'
+import CompC from './CompC'
+export default function CompB({data}) {
+  return (
+    <>
+    <CompC data= {data}/>
+    </>
+  )
+}
+=============================compc
+import React from 'react'
+
+export default function CompC({data}) {
+  return (
+   <>
+   <h2>hello react</h2>
+   <h3>hello {data}</h3>
+   </>
+  )
+}

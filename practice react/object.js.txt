@@ -1,0 +1,16 @@
+import ReactDOM from 'react-dom/client'
+const person={
+  name:"Mercy",
+  place:"Hyd",
+  age:"22",
+}
+ const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+<>
+<h1 style={{color: "green"}}>{person.name}</h1>
+<h1 style={{color: "red"}}>{person.place}</h1>
+<h1 style={{color: "purple"}}>{person.age}</h1>
+</>
+    
+  
+);

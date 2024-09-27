@@ -1,0 +1,50 @@
+index.js==========================
+import ReactDOM from "react-dom/client"
+import App from'./App'
+const root=ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+<>
+<App/>
+</>
+);
+app.js=============================
+import Comp1 from "./Comp1"
+import Comp2 from "./Comp2"
+
+const App = () => {
+    let name1 = "mercy"
+    let name2 = "janu"
+    let pic1="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0i4Us7UDJkjWvsGskrq0nt4Blr0tBjHkv7w&s"
+    let pic2="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8iHvkdn4WOLsEQkBZQmI-bKj1HL9Cc6zVTg&s"
+    return (
+        <div>
+            <Comp1 name={name1} pic={pic1} />
+            <Comp2 name={name2} pic={pic2} />
+        </div>
+    )
+}
+export default App
+comp1===============================
+import React from 'react'
+
+export default function Comp1(props) {
+  return (
+    <div>
+        <h2>{props.name}</h2>
+       <img src={props.pic} alt='' width="300px"/>
+    </div>
+  )
+}
+
+comp2===============================
+import React from 'react'
+
+export default function Comp2(props) {
+  return (
+    <div>
+       <h2>{props.name}</h2>
+       <img src={props.pic} alt=''/>
+    </div>
+  )
+}
+

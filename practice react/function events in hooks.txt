@@ -1,0 +1,15 @@
+
+const App = () => {
+    function demo(){
+alert("hello Bobby")
+    }
+    return (
+        <>
+          
+      <button onClick={demo}>click me</button>
+      <button onMouseOver={demo}>mouse over</button>
+      <button onMouseOut={demo}>mouse out</button>
+        </>
+    )
+}
+export default App

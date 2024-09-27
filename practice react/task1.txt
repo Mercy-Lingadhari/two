@@ -1,0 +1,16 @@
+import ReactDOM from 'react-dom/client'
+const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <div>
+   <h1>React</h1>
+   <hr/>
+   <h2>single page application</h2>
+   <p>mhusyhnkjs hisu6yughbmsa kjweyiwubhdmasx jmwqehgqwudshwjabx nwhsjqwyhjqwbvdhnwa mnawhsutygshjkjhgfds ,kjhgfds kjhgfdsxcvbnm kjhgfdsdxcfvbnm jhgfdszzxcvbvhtdgvbwvd mngshwvsbn</p>
+   <ol>
+    <li>javascript</li>
+    <li>css</li>
+    <li>react</li>
+   </ol>
+   <hr/>
+    </div>
+);
